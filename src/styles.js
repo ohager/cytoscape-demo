@@ -91,6 +91,19 @@ module.exports = {
         'padding-bottom': 40,
         'padding-right': 40
       }
+    },
+    {
+      selector: '.hidden',
+      style: {
+        'display': 'none'
+      }
+    },
+    {
+      selector: '#clickme',
+      style: {
+        'shape': 'roundrectangle',
+        'height': '32'
+      }
     }
   ]
 }

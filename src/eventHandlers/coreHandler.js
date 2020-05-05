@@ -1,6 +1,6 @@
 function init(cy) {
-  cy.$('#core').on('click', (e) => {
-    console.log('clicked:', e.target)
+  cy.$('#core').on('click', ({target}) => {
+    console.log('clicked', target)
   })
 }
 

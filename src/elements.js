@@ -4,7 +4,6 @@ module.exports = {
       {
         data: { id: 'cy', name: 'Cytoscape.js' },
       },
-
       {
         data: { id: 'core', name: 'Core', parent: 'api' },
         position: { x: 0, y: 0 },
@@ -14,9 +13,7 @@ module.exports = {
       {
         data: { id: 'eles', name: 'Collection', parent: 'api' },
         position: { x: 150, y: 150 },
-        grabbable: false
       },
-
       {
         data: { id: 'style', name: 'Stylesheet', parent: 'api' },
         position: { x: 0, y: 150 },
@@ -60,19 +57,20 @@ module.exports = {
       {
         data: { id: 'api', name: 'Core API', parent: 'cy' }
       },
-
       {
         data: { id: 'app', name: 'Client' },
+        position: { x: 0, y: 480 }
+      },
+      {
+        data: { id: 'clickme', name: 'collapse', parent: 'app' },
         position: { x: 0, y: 480 }
       }
     ],
     edges: [
       { data: { source: 'core', target: 'eles' } },
-      { data: { source: 'core', target: 'ext' } },
       { data: { source: 'core', target: 'style' } },
       { data: { source: 'style', target: 'selector' } },
       { data: { source: 'core', target: 'selector' } },
-      { data: { source: 'elesfn', target: 'eles' }, classes: 'ext' },
       { data: { source: 'corefn', target: 'api' }, classes: 'ext' },
       { data: { source: 'layout', target: 'api' }, classes: 'ext' },
       { data: { source: 'renderer', target: 'api' }, classes: 'ext' },
