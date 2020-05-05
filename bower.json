@@ -1,0 +1,24 @@
+{
+  "name": "cytoscape-custom-style",
+  "description": "Checkout custom styles",
+  "main": "cytoscape-custom-style.js",
+  "dependencies": {
+    "cytoscape": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohager/.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "cytoscape",
+    "cytoscape-extension"
+  ],
+  "license": "MIT"
+}
